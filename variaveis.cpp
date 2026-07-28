@@ -34,4 +34,5 @@ int main(){
     std::cout << "nivel:  " << nivel<<"\n"; 
 
     return 0;
-}
+
+};
