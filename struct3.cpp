@@ -32,7 +32,7 @@ int main(){
     npc1.vida=200;
     npc1.nivel=15;
     npc1.mana=100;
-    npc1.forca=50;
+    npc1.forca=55;
     npc1.defesa=150;
     std::cout<<"defesa de "<<npc1.nome<<": "<<npc1.defesa<<"\n";
 
@@ -43,26 +43,26 @@ int main(){
     npc2.vida=200;
     npc2.nivel=15;
     npc2.mana=100;
-    npc2.forca=50;
+    npc2.forca=60;
     npc2.defesa=200;
     std::cout<<"defesa de "<<npc2.nome<<": "<<npc2.defesa<<"\n";
 
     std::cout<<"\n";
 
-    if(maior.defesa<prota.defesa){
+    if(maior.forca<prota.forca){
         maior=prota;
     }
 
-    if(maior.defesa<npc2.defesa){
+    if(maior.forca<npc2.forca){
         maior=npc2;
     }
 
-    if(maior.defesa<npc1.defesa){
+    if(maior.forca<npc1.forca){
         maior=npc1;
         
     }
     
-    std::cout<<"maior defesa: "<<maior.nome;
-
+    std::cout<<"maior forca: "<<maior.nome;
+    std::cout<<"maior forca: "<<maior.forca;
     return 0;
 }
